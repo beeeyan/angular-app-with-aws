@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  devnode:
+    build: ./docker/devnode
+    ports:
+      - "4200:4200"
+    volumes:
+      - "./server:/projects"
+    working_dir: /projects/angular-app
+    command: ng serve --host 0.0.0.0
+    tty: true
