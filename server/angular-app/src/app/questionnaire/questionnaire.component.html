@@ -1,0 +1,34 @@
+<div id="questionnaire-component">
+    <h3><label for="questionnaire-box">勉強会アンケート</label></h3>
+
+    <div>
+        <label>満足度 </label><br>
+        <label>1</label><input type="radio" [(ngModel)]="questionnaire.satisfaction" [value]=1 /><br>
+        <label>2</label><input type="radio" [(ngModel)]="questionnaire.satisfaction" [value]=2 /><br>
+        <label>3</label><input type="radio" [(ngModel)]="questionnaire.satisfaction" [value]=3 /><br>
+        <label>4</label><input type="radio" [(ngModel)]="questionnaire.satisfaction" [value]=4 /><br>
+        <label>5</label><input type="radio" [(ngModel)]="questionnaire.satisfaction" [value]=5 /><br>
+        <label>6</label><input type="radio" [(ngModel)]="questionnaire.satisfaction" [value]=6 /><br>
+        <label>7</label><input type="radio" [(ngModel)]="questionnaire.satisfaction" [value]=7 /><br>
+        <label>8</label><input type="radio" [(ngModel)]="questionnaire.satisfaction" [value]=8 /><br>
+        <label>9</label><input type="radio" [(ngModel)]="questionnaire.satisfaction" [value]=9 /><br>
+        <label>10</label><input type="radio" [(ngModel)]="questionnaire.satisfaction" [value]=10 /><br>
+    </div>
+    <br>
+    <div>
+        <label>次回やって欲しいテーマ </label><br>
+        <textarea [(ngModel)]="questionnaire.expection"></textarea>
+    </div>
+    <div>
+        <label>コメント </label><br>
+        <textarea [(ngModel)]="questionnaire.comment"></textarea>
+    </div>
+
+
+    <div>
+        <button (click)="test();">
+            test
+        </button>
+    </div>
+
+</div>
