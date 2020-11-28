@@ -1,5 +1,6 @@
 import { Component, OnInit, Output } from '@angular/core';
 import { Questionnaire } from '../questionnaire';
+import { DynamoService } from '../dynamo.service';
 // import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
@@ -13,18 +14,25 @@ export class QuestionnaireComponent implements OnInit {
     comment: "",
     satisfaction: 0,
     expection: "",
-    improvement: "",
   };
   // questionnaireForm: FormGroup;
 
-  constructor() { }
+  constructor(private dynamoService: DynamoService) { }
 
   ngOnInit(): void {
   }
 
-  test(): void{
-    alert(this.questionnaire.comment);
-    alert(this.questionnaire.satisfaction);
+  addQuestionnaire(): void{
+    const result: Promise<boolean> = this.dynamoService.addDynamoDB(this.questionnaire);
+    if(result){
+      alert("登録完了");
+    }else{
+      alert("登録失敗");
+    }
+  }
+  getQuestionnaire(): void{
+    const result: Promise<any> = this.dynamoService.getDynamoDB();
+    alert(result);
   }
 
 }
