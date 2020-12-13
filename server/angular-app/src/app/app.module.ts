@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuestionnaireComponent } from './questionnaire/questionnaire.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { DetailformComponent } from './detailform/detailform.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuestionnaireComponent,
-    DashboardComponent
+    DashboardComponent,
+    DetailformComponent
   ],
   imports: [
     BrowserModule,
