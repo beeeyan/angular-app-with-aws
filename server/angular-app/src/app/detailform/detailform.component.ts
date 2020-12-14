@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./detailform.component.scss']
 })
 export class DetailformComponent implements OnInit {
+  // チェックボックス用
+  checked = false;
 
-  constructor() { }
+  constructor(
+  ) { }
 
   ngOnInit(): void {
   }
