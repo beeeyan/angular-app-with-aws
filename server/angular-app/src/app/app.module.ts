@@ -4,10 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatRadioModule } from '@angular/material/radio';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatInputModule } from '@angular/material/input'; 
+import { AppMaterialModule } from './material-module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,10 +25,7 @@ import { DetailformComponent } from './detailform/detailform.component';
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatRadioModule,
-    MatFormFieldModule,
-    MatCheckboxModule,
-    MatInputModule
+    AppMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
