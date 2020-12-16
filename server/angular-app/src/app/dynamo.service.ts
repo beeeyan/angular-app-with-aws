@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Questionnaire } from './questionnaire';
+import { Questionnaire } from './model/questionnaire';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DynamoService {
 
-  private host: string = "dummy"
+  private host: string = "https://vfjwb3u9yi.execute-api.ap-northeast-1.amazonaws.com/dev"
 
   httpOption = {
     headers: new HttpHeaders({ 'Content-Type' : 'application/json'})

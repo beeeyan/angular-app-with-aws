@@ -1,5 +1,5 @@
 import { Component, OnInit, Output } from '@angular/core';
-import { Questionnaire } from '../questionnaire';
+import { Questionnaire } from '../model/questionnaire';
 import { DynamoService } from '../dynamo.service';
 // import { FormBuilder, FormGroup } from '@angular/forms';
 
