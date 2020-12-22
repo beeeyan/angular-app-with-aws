@@ -1,6 +1,6 @@
 <h3>詳細情報の入力（formのデザインの練習）</h3>
 
-<label>ラジオボタン + テキストボックス</label>
+<label class="bg-lightblue">ラジオボタン + テキストボックス</label>
 <div>
 <mat-radio-group aria-label="Select an option" [(ngModel)]="radioandtext.value">
   <mat-radio-button class="radio-btn" *ngFor="let option of options" [value]="option">
@@ -12,10 +12,10 @@
 </mat-radio-group>
 </div>
 
-<section class="example-section">
-  <mat-checkbox class="example-margin" [(ngModel)]="checked">Checked</mat-checkbox>
+<section>
+  <mat-checkbox [(ngModel)]="checked">Checked</mat-checkbox>
 </section>
 
 <div>
-  <button (click)="confirmData()" mat-raised-button color="primary">確認</button>
+  <button (click)="confirmData()" mat-raised-button color="primary" class="btn">確認</button>
 </div>
