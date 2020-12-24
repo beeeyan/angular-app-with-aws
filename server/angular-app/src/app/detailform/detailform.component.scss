@@ -1,12 +1,22 @@
-.radio-btn {
-    margin-right: 10px,
+.remove-top {
+  >.mat-form-field-wrapper {
+    >.mat-form-field-flex {
+      >.mat-form-field-infix {
+        border-top: none;
+      }
+    }
+  }
 }
 
-.btn{
-    margin-top: 10px;
+.radio-btn {
+  margin-right: 10px,
+}
+
+.btn {
+  margin-top: 10px;
 }
 
 .bg-lightblue {
-    background-color: #81d4fa;
-    padding: 3px
+  background-color: #81d4fa;
+  padding: 3px
 }

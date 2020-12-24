@@ -2,19 +2,15 @@
 
 <label class="bg-lightblue">ラジオボタン + テキストボックス</label>
 <div>
-<mat-radio-group aria-label="Select an option" [(ngModel)]="radioandtext.value">
-  <mat-radio-button class="radio-btn" *ngFor="let option of options" [value]="option">
-    {{option}}
-  </mat-radio-button>
-  <mat-form-field appearance="standard">
-    <input matInput [(ngModel)]="radioandtext.text" placeholder="">
-  </mat-form-field>
-</mat-radio-group>
+  <mat-radio-group aria-label="Select an option" [(ngModel)]="radioandtext.value">
+    <mat-radio-button class="radio-btn" *ngFor="let option of options" [value]="option">
+      {{option}}
+    </mat-radio-button>
+    <mat-form-field appearance="standard" class="remove-top">
+      <input matInput [(ngModel)]="radioandtext.text" placeholder="">
+    </mat-form-field>
+  </mat-radio-group>
 </div>
-
-<section>
-  <mat-checkbox [(ngModel)]="checked">Checked</mat-checkbox>
-</section>
 
 <div>
   <button (click)="confirmData()" mat-raised-button color="primary" class="btn">確認</button>

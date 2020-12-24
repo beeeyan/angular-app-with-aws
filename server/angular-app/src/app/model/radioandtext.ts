@@ -1,4 +1,4 @@
 export class Radioandtext {
-    value: number;
+    value: string;
     text: string;
 }
